@@ -1,0 +1,15 @@
+myapp_contact_lister:
+  pattern: /contact/
+  defaults: { _controller: MyAppCarnetBundle:Contact:lister }
+myapp_contact_ajouter:
+  pattern: /contact/ajouter
+  defaults: { _controller: MyAppCarnetBundle:Contact:editer }
+myapp_contact_modifier:
+  pattern: /contact/modifier/{id}
+  defaults: { _controller: MyAppCarnetBundle:Contact:editer }
+myapp_contact_supprimer:
+  pattern: /contact/supprimer/{id}
+  defaults: { _controller: MyAppCarnetBundle:Contact:supprimer }
+myapp_accueil:
+    pattern: /
+    defaults: { _controller: MyAppCarnetBundle:Default:index }  

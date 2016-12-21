@@ -1,0 +1,10 @@
+<html>
+	<body>
+		<h1>Liste des contacts</h1>
+		{% for cat in contact %}
+			<p>{{ cat.nom }} {{ cat.prenom }} {{ cat.telephone }} {{ cat.email }} {{ cat.siteweb }}</p>
+		{% else %}
+			<p>Aucun contact n'a été trouvée.</p>
+		{% endfor %}
+	</body>
+</html>

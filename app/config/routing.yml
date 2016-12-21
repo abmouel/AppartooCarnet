@@ -1,0 +1,3 @@
+my_app_carnet:
+    resource: "@MyAppCarnetBundle/Resources/config/routing.yml"
+    prefix:   /myapp
